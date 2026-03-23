@@ -16,3 +16,80 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* logo + bannière de téléphone */
+
+.logo {
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  width:2.70rem;
+  z-index: 1;
+}
+
+.banniere {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #094AB1;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  color: #ffffff;
+}
+
+i {
+  transition: 0.3s all ease-in-out;
+}
+
+.banniere:hover i{
+  font-size: 1.4rem;
+}
+
+.banniere a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s all ease-in-out;
+}
+.banniere a:hover {
+  text-decoration: underline;
+  color: #E1C716;
+}
+
+/* nav */
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b1b1b;
+  position: fixed;
+  padding: 1rem 0 0;
+}
+
+nav img {
+  width: 200px;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.burger div {
+  height: 2px;
+  width: 1.7rem;
+  background-color: #094AB1;
+  margin-right: 1rem;
+}
+
+/* header */
+
