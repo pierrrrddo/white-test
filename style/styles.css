@@ -207,11 +207,14 @@ section > p {
 
 main {
   padding: 3.5rem 1rem 5rem;
+}
+
+.grid {
   display: grid;
   gap: 1rem;
 }
 
-main > a {
+main div > a {
   text-decoration: none;
 }
 
@@ -237,6 +240,12 @@ h3 {
   color: #1b1b1b;
   box-shadow: 4px 4px 4px 0 rgba(134, 134, 134, 0.062);
   transition: 0.3s all ease-in-out;
+  border-radius: 5px;
+}
+
+.card-black {
+  background-color: #1b1b1b;
+  color: #ffffff;
 }
 
 .card div:nth-of-type(1) {
@@ -252,6 +261,10 @@ h3 {
   text-transform: uppercase;
 }
 
+.languette-white {
+  color: #ffffff;
+}
+
 .languette > .fa-solid {
   color: #0949b1b0;
 }
@@ -259,9 +272,15 @@ h3 {
 .card:hover {
   transform: translateY(-0.6rem);
 }
+
 .card:hover p{
   color: #094AB1;
 }
+
+.card-black:hover p {
+  color: #ffffff;
+}
+
 .card:hover div:nth-of-type(1) {
   width: 100%;
   background-color: #094AB1;
@@ -278,8 +297,128 @@ h3 {
 }
 
 [alt="Benchmark"] {
-  
   height: 195px;
   width: 100%;
   padding: 50px 0;
+}
+
+/* section blue */
+
+section div a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gap {
+  gap: 2rem;
+}
+
+.btn-blue {
+  background-color: #002e77;
+  padding: 0.75rem 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+/* footer */
+
+ footer {
+  background-color: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  gap: 3rem;
+} 
+
+.footer-grid {
+  display: grid;
+}
+
+footer img {
+  width: 340px;
+  padding: 3rem 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.lastp {
+  padding-bottom: 3rem ;
+}
+
+
+/* responsive */
+
+@media screen and (min-width: 650px) {
+  .banniere {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .wrapper > section:nth-of-type(1) p{
+    text-align: left;
+  }
+
+  .wrapper > section:nth-of-type(1) div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  span,h2 {
+    align-self: flex-start;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .flex {
+    align-items: flex-start;
+  }
+
+  .flex p{
+    text-align: left;
+  }
+
+  /* footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  footer img {
+    width: ;
+  }
+
+  footer div {
+    width: calc(100%-3rem);
+  } */
+}
+
+@media screen and (min-width: 1000px) {
+  
 }
