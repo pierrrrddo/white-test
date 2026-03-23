@@ -17,6 +17,27 @@ img {
   max-width: 100%;
 }
 
+/* color */
+.white {
+  color: #ffffff;
+}
+
+.black{
+  color: #000000;
+}
+
+/* blue background */
+
+.back-blue {
+  background-color: #094AB1;
+}
+
+/* position relative */
+
+.pos-relat {
+  position: relative;
+}
+
 /* logo + bannière de téléphone */
 
 .logo {
@@ -26,7 +47,7 @@ img {
   bottom: 1rem;
   left: 1rem;
   width:2.70rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 .banniere {
@@ -40,6 +61,7 @@ img {
   position: fixed;
   bottom: 0;
   color: #ffffff;
+  z-index: 1;
 }
 
 i {
@@ -72,6 +94,7 @@ nav {
   background-color: #1b1b1b;
   position: fixed;
   padding: 1rem 0 0;
+  z-index: 1;
 }
 
 nav img {
@@ -93,3 +116,170 @@ nav img {
 
 /* header */
 
+header {
+  position: relative;
+  height: 100vh;
+}
+
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #0225027e;
+}
+
+header div {
+  position: absolute;
+  top: calc(50% - 73px);
+  padding: 0 2rem;
+  color: #ffffff;
+}
+
+/* wrapper */
+
+.wrapper {
+  /* width: 95%;
+  margin: 0 auto; */
+  text-align: center;
+}
+
+/*********** all section ***********/
+
+section {
+  padding: 3.5rem 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 2 section */
+
+section div img {
+  width: 60%;
+  margin: auto;
+  border-radius: 50%;
+  border: 1rem solid #3969BF;
+  margin-bottom: 2rem;
+}
+.nom {
+  position: absolute;
+  top: 30%;
+  left: calc(50% - 105px);
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(90deg,rgba(0, 27, 51, 1) 0%, rgba(0, 87, 163, 1) 100%);
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #ffffff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #1E3050;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+h2 {
+  margin: 0;
+}
+
+section > p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
+/* main */
+
+main {
+  padding: 3.5rem 1rem 5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+main > a {
+  text-decoration: none;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+h3 {
+  margin: 1rem 0 0;
+}
+
+.card {
+  background-color: #F3F5F9;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  line-height: 1.3rem;
+  color: #1b1b1b;
+  box-shadow: 4px 4px 4px 0 rgba(134, 134, 134, 0.062);
+  transition: 0.3s all ease-in-out;
+}
+
+.card div:nth-of-type(1) {
+  background-color: #4d4d4d11;
+  width: 20%;
+  height: 3px;
+  transition: 0.3s all ease-in-out;
+}
+
+.languette {
+  padding-top: 1rem;
+  color: #094AB1;
+  text-transform: uppercase;
+}
+
+.languette > .fa-solid {
+  color: #0949b1b0;
+}
+
+.card:hover {
+  transform: translateY(-0.6rem);
+}
+.card:hover p{
+  color: #094AB1;
+}
+.card:hover div:nth-of-type(1) {
+  width: 100%;
+  background-color: #094AB1;
+}
+
+/* bannière d'image*/
+
+.banniere-image {
+  height: 295px;
+  padding: 50px 0;
+  background-color: #094AB1;
+  display: flex;
+  align-items: center;
+}
+
+[alt="Benchmark"] {
+  
+  height: 195px;
+  width: 100%;
+  padding: 50px 0;
+}
